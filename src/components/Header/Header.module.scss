@@ -1,0 +1,30 @@
+@import "../../style/vars";
+
+.wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #ffffff;
+  font-weight: 700;
+  background-color: $primary-color;
+  padding: 16px 32px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.item {
+  display: flex;
+}
+.logo {
+  display: flex;
+  align-items: center;
+  & h1 {
+    margin-left: 24px;
+  }
+}
+.menu {
+  display: flex;
+  margin-right: 24px;
+}

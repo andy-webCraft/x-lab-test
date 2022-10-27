@@ -1,0 +1,13 @@
+@import "../../../style/vars.scss";
+
+.wrapper {
+  color: $second-font-color;
+}
+.title {
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+}
+.subtitle {
+  margin: 16px 0 24px;
+}

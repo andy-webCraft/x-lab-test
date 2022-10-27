@@ -1,0 +1,10 @@
+@import "./style/vars";
+
+body {
+  font-family: $main-font;
+  font-size: $main-font-size;
+  font-weight: 500;
+  line-height: 24px;
+  color: $main-font-color;
+  overflow: hidden;
+}

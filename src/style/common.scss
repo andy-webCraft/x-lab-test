@@ -1,0 +1,21 @@
+@import "./vars.scss";
+
+.link,
+.link:link {
+  color: $link-color;
+  text-decoration: underline;
+}
+
+.customScroll {
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+  &::-webkit-scrollbar-track {
+    background: inherit;
+  }
+  &::-webkit-scrollbar-thumb {
+    background-color: $primary-color;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+  }
+}

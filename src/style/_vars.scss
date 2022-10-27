@@ -1,0 +1,17 @@
+//  Font
+$main-font: "Montserrat", serif;
+$main-font-size: 20px;
+$main-font-color: #000000;
+$second-font-color: #1c1c1e;
+
+//  Colors
+$primary-color: #4f27bf;
+$link-color: #002bc5;
+
+:export {
+  main-font: $main-font;
+  main-font-size: $main-font-size;
+  main-font-color: $main-font-color;
+  primary-color: $primary-color;
+  link-color: $link-color;
+}

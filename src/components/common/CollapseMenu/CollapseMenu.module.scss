@@ -1,0 +1,31 @@
+.title {
+  position: relative;
+  & > svg {
+    transition: all 0.3s linear;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%) rotateX(-180deg);
+  }
+}
+.body {
+  max-height: 0px;
+  padding-left: 48px;
+  transition: all 0.3s linear;
+  overflow: hidden;
+  & li {
+    margin-bottom: 32px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+.open {
+  & .title > svg {
+    transform: translateY(-50%);
+  }
+  & .body {
+    max-height: 300px;
+    margin-top: 32px;
+  }
+}

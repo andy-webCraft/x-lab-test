@@ -1,0 +1,45 @@
+@import "../../style/vars.scss";
+
+.container {
+  width: 100%;
+  height: calc(100vh - 80px);
+  display: flex;
+  margin-top: 80px;
+}
+.sidebar {
+  flex: 0 0 300px;
+  overflow-x: hidden;
+  overflow-y: auto;
+  &.mobile {
+    width: 100%;
+    height: calc(100vh - 80px);
+    position: absolute;
+    transition: 0.2s ease-in-out;
+    opacity: 0;
+    z-index: -1;
+    & > div {
+      width: 100%;
+      position: absolute;
+      top: 0px;
+      left: -100%;
+      transition: 0.2s ease-in-out;
+    }
+  }
+  &.isOpen {
+    opacity: 1;
+    z-index: 30;
+    & > div {
+      transform: translateX(100%);
+    }
+  }
+}
+.content {
+  flex: 1 1 auto;
+  overflow-x: hidden;
+  overflow-y: auto;
+  & > section {
+    min-height: 100%;
+    padding: 32px;
+    position: relative;
+  }
+}
